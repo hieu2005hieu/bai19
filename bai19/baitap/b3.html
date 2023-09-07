@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #body {
+        background-color: aquamarine;
+        width: 400px;
+        height: 300px;
+    }
+    #div1 {
+        background-color: blue;
+        width: 130px;
+        height: 80px;
+    }
+    #div2 {
+        background-color: rgb(47, 47, 69);
+        width: 130px;
+        height: 80px;
+    }
+    #div3 {
+        background-color: rgb(132, 222, 76);
+        width: 130px;
+        height: 80px;
+    }
+    #foodt{
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+<body>
+    <div id ="body">
+        <div id ="heat">
+            <h2>Change background color</h2>
+            <p>Mouse over the squares!</p>
+        </div>
+        <div id="foodt">
+            <div id="div1" onmouseover="hieu()"
+            onmouseout="none()"></div>
+            <div id="div2" onmouseover="len()"onmouseout="li()"></div>
+            <div id="div3" onmouseover="hide()"onmouseout="khi()"></div>
+        </div>
+    </div>
+        <script>
+            let a=document.getElementById("div1")
+            let b=document.getElementById("div2")
+            let c=document.getElementById("div3")
+       let d = document.getElementById("body") 
+       function hieu(){
+        d.style.backgroundColor="blue";
+       }
+       function none(){
+        d.style.backgroundColor="aquamarine";
+       }
+       function len(){
+        d.style.backgroundColor=" rgb(47, 47, 69)";
+       }
+       function li(){
+        d.style.backgroundColor="aquamarine"
+       }
+       function hide(){
+        d.style.backgroundColor="rgb(132, 222, 76) ";
+       }
+       function khi(){
+        d.style.backgroundColor="aquamarine"
+       }
+       </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2 {
+       margin-left: 50px;
+    }
+    u{
+        margin-left: 40px;
+    }
+    #text2{
+        background-color: dimgray;
+        width: 100px;
+        text-align: center;
+        margin-left: 35px;
+    }
+</style>
+<body>
+    <div>
+        <h2>Tooltip</h2>
+        <p>Move the concat text below</p>
+        <div id = "text">
+            <u id="text1" onmouseover="h()"onmouseout="li()">Hover over me</u>
+            <p id="text2">Tooltip text</p>
+        </div>
+    </div>
+    <script>
+         let a = document.getElementById("text1")
+         let b= document.getElementById("text2")
+         b.style.display="none"
+         function h(){
+           b.style.display="block"
+         }
+         function li (){
+            b.style.display="none"
+         }
+    </script>
+</body>
+</html>

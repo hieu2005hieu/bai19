@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    span {
+        background-color: aqua;
+        width: 800px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #butt{
+        display: flex;
+        margin-left: 770px;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+    }
+    
+</style>
+<body>
+    <div id =heat>
+        <h2>Modal Example</h2>
+        <button id = btum onclick="show()">open Modal</button>
+        <span id = text1>
+             <p id = text2>some text in the Modal</p>
+             <button id="butt" onclick="hide()">X</button>
+        </span>
+       
+        
+    </div>
+    <script>
+        let d=document.getElementById("heat")
+        let c= document.getElementById("text1")
+        c.style.display="none"
+        function show(){
+            c.style.display="block";
+            d.style.backgroundColor="blue"
+            d.style.height="800px"
+            
+           
+        }
+        function hide(){
+            c.style.display="none"
+            d.style.backgroundColor="white"
+
+        }
+        
+    </script>
+</body>
+</html>

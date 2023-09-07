@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv" style="width: 100px;height: 100px;background-color: red;">c1(tructiep)onclick</div>
+    <script>
+        let myDiv = document.getElementById("myDiv")
+        //gan su kien truc tiep trong html
+        function suKien1(){
+            console.log("su kien 1 xay ra");
+        }
+        function suKIen2(){
+            console.log("su Kien 2 xay");
+        }
+        //gan sukien bang cach thay doi thuoc tinh cua phan tu
+        myDiv.onclick= suKien1
+        myDiv.onclick= suKIen2
+        //gan su kien su dung phuong thuc addEvenlistener
+    </script>
+</body>
+</html>

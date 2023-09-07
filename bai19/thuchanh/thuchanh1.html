@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+bai1<!-- <ul id="list"></ul>
+    <script>
+      const container = document.getElementById(`list`);
+      for(let i = 0; i <script 3; i++) {
+      container.insertAdjacentHTML(`afterbegin`, `<li>${i}</li>`)
+      </script>
+    } -->
+bai2<!--     <p id="demo"></p>   
+    <script>
+        const element = document.getElementById("demo");
+        setInterval(function() {
+            element.innerHTML += "Heehaw"
+        }, 1000);
+    </script>
+ -->    
+ bai4<!-- <ul>
+    <li>News</li>
+    <li>Articles</li>
+    <li>Blog</li>
+  <ul>
+
+    <script>
+        let a=document.getElementsByTagName("li")
+        console.log(a[1].innerHTML);
+        for (let i = 0; i< a.length; i++) {
+            console.log(a[i]);
+        }
+    </script> -->
+bai5<!-- <div>
+    <div class="singer">James Bay</div>
+    <div class="singer">Nate Ruess</div>
+    <div class="singer">Ed Sheeran</div>
+    <div class="singer">Steve Garrigan</div>
+  <div>
+
+    <script>
+        let myDiv=document.getElementsByClassName("singer")
+        console.log(myDiv[1].innerHTML);
+        for (let i = 0; i < myDiv.length; i++) {
+            console.log(myDiv[i]);
+        }
+    </script> -->
+  bai6  <!-- <div>
+        <div class="singer">James Bay</div>
+        <div class="singer">Nate Ruess</div>
+        <div class="singer">Ed Sheeran</div>
+        <div class="singer">Steve Garrigan</div>
+      <div>
+
+        <script>
+            let a=document.getElementsByClassName("singer")
+            a[1].remove()
+            console.log(a);
+        </script> -->
+  bai7.1<!--  <button id ="myBtn1">Ấn</button>
+  <button id ="myBtn2">Giữ</button>
+  <script>
+     let btn1=document.getElementById("myBtn1");
+     let btn2=document.getElementById("myBtn2");
+      
+       btn1.addEventListener("click",(e)=>{
+      // document.getElementById("myBtn1").innerHTML = "kho hieu"
+      console.log(e);
+     }
+          
+  )
+       
+  </script>
+ -->
+ bai7.2<!-- <button id ="myBtn1">Ấn</button>
+ <button id ="myBtn2">Giữ</button>
+ <script>
+     let btn1=document.getElementById("myBtn1")
+     let btn2=document.getElementById("myBtn2")
+
+     btn1.addEventListener("click",(e)=>{
+         console.log(e.target);
+     })
+     btn2.addEventListener("click",(e)=>{
+         console.log(e.target);          
+     })
+</script> -->
+bai7.3
+<input type="text"  id ="myInput">
+    <script>
+        let myInput=document.getElementById("myInput");
+        myInput.addEventListener("keypress",(e)=>{
+            console.log(e);
+        })
+    </script>
+
+</body>
+</html>

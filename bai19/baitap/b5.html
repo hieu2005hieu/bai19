@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     #tom{
+        display: none;
+     }
+</style>
+
+<body>
+    <div class="heat">
+        <div>
+            <h2>Toggle Dark/Light Mode</h2>
+            <p>click the button to toggle between dark and lish mode for this page.</p>
+        </div>
+        <button id="but" >toggle dark mode</button>
+        <button id = "tom">toggle dark mode</button>
+    </div>
+    <script>
+        let a = document.getElementById("but")
+        let b = document.body
+        let c= document.getElementById("tom")
+        a.addEventListener("click",()=>{
+         b.style.backgroundColor="black"
+         b.style.color="white" 
+         a.style.display="none"
+         c.style.display="block"
+        
+
+         })
+         c.addEventListener("click", ()=>{
+        b.style.backgroundColor="white"
+        b.style.color="black"
+        c.style.display="none"
+        a.style.display="block"
+         })
+
+       
+    </script>
+</body>
+
+</html>

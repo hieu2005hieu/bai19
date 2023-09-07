@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id = "myInput">
+    <script>
+        let myInput=document.getElementById("myInput")
+        //su kien khi an phim tren ban phim
+         myInput.addEvenlistener("keypress", (e) =>{
+            console.log("nhan phim",e.keyCode);
+            if (e.keyCode ==97){
+                console.log("an phim a");
+            }
+         })
+    </script>
+</body>
+</html>
